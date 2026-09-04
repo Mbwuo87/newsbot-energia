@@ -1,9 +1,9 @@
-name: Reporte diario de energía
+name: Reporte semanal de energía
 
 on:
   schedule:
     # 11:00 UTC = 08:00 en Argentina (Argentina no tiene horario de verano)
-    - cron: "0 11 * * *"
+    - cron: "0 11 * * 1"
   workflow_dispatch: {}  # permite lanzarlo a mano desde la pestaña "Actions" para probar
 
 permissions:
